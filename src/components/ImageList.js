@@ -1,4 +1,5 @@
 import React from 'react'
+import './ImageList.css'
 
 const ImageList = (props) => {
 
@@ -7,8 +8,7 @@ const ImageList = (props) => {
              <img  src={urls.regular} alt={description}/>
         </div>
     });
-
-    return <div>{images}</div>
+    return <div className="image-list">{images}</div>
 }
 
 export default ImageList;
